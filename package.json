@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "prebuild": "tsc",
-    "build": "docker build -t projeto ."
+    "build": "docker build -t projeto .",
+    "start": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",

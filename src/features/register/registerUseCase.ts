@@ -1,4 +1,4 @@
-import { IRepository } from "../../repositories/IRepository";
+import IRepository from "../../repositories/IRepository";
 
 export class RegisterUseCase {
     private _collection: string;

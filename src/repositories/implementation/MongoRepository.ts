@@ -1,4 +1,4 @@
-import { IRepository } from "../IRepository";
+import IRepository from "../IRepository";
 import * as db from "../../infra/database/MongoConnection";
 
 export class MongoRepository implements IRepository {
@@ -14,6 +14,12 @@ export class MongoRepository implements IRepository {
     }
     async delete(collection: string, id: string): Promise<any> {
         throw new Error("Method not implemented.");
+    }
+    async select(page: number, limit: number,query?: object,sort?: object): Promise<any>{
+        throw new Error("Method not implemented");
+    }
+    async selectCount(query?: object): Promise<number>{
+        throw new Error("Method not implemented");
     }
     
 }
